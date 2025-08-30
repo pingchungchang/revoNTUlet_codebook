@@ -24,3 +24,10 @@
 
 #set heading(numbering: "1.1")
 
+= Setup
+== Remap Escape
+#include "src/setup/escape.typ"
+== vimrc
+#include "src/setup/vimrc.typ"
+#CodeBlocks("default code", "src/setup/tpl.cpp")
+
