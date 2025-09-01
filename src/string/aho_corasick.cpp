@@ -1,5 +1,4 @@
-#define FOR(i, j, k) for (int i = j, Z = k; i < Z; i++)
-
+// only construct the automaton
 struct AC {
     int nc;
     char c[MXN];
