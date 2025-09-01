@@ -1,4 +1,3 @@
-// tested at https://codeforces.com/group/79niCea2aI/contest/542496/problem/M
 // needs Point template
 template <typename T>
 vector<Pt<T>> minkowski(vector<Pt<T>> va,vector<Pt<T>> vb){

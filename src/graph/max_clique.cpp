@@ -1,4 +1,3 @@
-// tested at https://ntuj.csie.org/contests/4/problems/3423
 constexpr size_t kN = 150; using bits = bitset<kN>;
 #define _all(T) T.begin(),T.end()
 struct MaxClique {

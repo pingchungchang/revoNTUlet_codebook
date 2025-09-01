@@ -1,4 +1,3 @@
-// tested at https://codeforces.com/group/16AkdQqf1V/contest/631725/problem/1A
 struct Dinic{//0-indexed
 	struct E{
 		int t,f,c;

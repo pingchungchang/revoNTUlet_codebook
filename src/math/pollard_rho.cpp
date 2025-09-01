@@ -1,4 +1,3 @@
-// tested at https://ntuj.csie.org/contests/4/problems/3429
 // needs mad,mub,mul,pw with changable mod
 //!!! use int128 for pw and mul
 

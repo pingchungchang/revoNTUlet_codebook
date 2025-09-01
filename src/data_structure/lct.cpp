@@ -1,4 +1,3 @@
-// tested at https://judge.yosupo.jp/submission/239483
 #define ll long long
 //needs splay
 //vertex add paths sum link-cut

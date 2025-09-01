@@ -1,4 +1,3 @@
-// tested at https://judge.yosupo.jp/submission/238822
 #define ll long long
 // range reverse range add range sum
 // need to push before using the info on node

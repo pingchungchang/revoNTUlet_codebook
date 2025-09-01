@@ -1,4 +1,3 @@
-// tested at https://judge.yosupo.jp/submission/239343
 #include <bits/stdc++.h>
 using namespace std;
 

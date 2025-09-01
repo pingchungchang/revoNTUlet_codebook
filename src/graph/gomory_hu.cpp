@@ -1,5 +1,4 @@
 // needs dinic
-// tested at https://codeforces.com/group/79niCea2aI/contest/552133/problem/O
 struct GomoryHuTree{//0-indexed
 #define pii pair<int,int>
 #define tiii tuple<int,int,int>

@@ -1,5 +1,3 @@
-// reference : 8BCube
-// tested at https://judge.yosupo.jp/submission/238643
 #define ll long long
 // only works for integer coordinates!! maintain max
 

@@ -32,40 +32,70 @@
 #CodeBlocks("default code", "src/setup/tpl.cpp")
 
 = Graph
+// tested at https://codeforces.com/group/16AkdQqf1V/contest/631725/problem/1A
 #CodeBlocks("Dinic", "src/graph/dominator_tree.cpp")
+// tested at https://codeforces.com/group/79niCea2aI/contest/548168/problem/R
 #CodeBlocks("Dominator Tree", "src/graph/dominator_tree.cpp")
+// tested at https://ntuj.csie.org/contests/4/problems/3426
 #CodeBlocks("Euler Tour", "src/graph/euler_tour.cpp")
+// tested at https://codeforces.com/group/79niCea2aI/contest/552133/problem/O
 #CodeBlocks("Gomory Hu", "src/graph/gomory_hu.cpp")
+// tested at https://codeforces.com/group/79niCea2aI/contest/548168/problem/S
 #CodeBlocks("Incremental SCC", "src/graph/incremental_scc.cpp")
+// tested at https://ntuj.csie.org/contests/1/problems/3676
 #CodeBlocks("KM", "src/graph/km.cpp")
+// tested at https://ntuj.csie.org/contests/4/problems/3423
 #CodeBlocks("Max Clique", "src/graph/max_clique.cpp")
 
 = Data Structure
+// reference : 8BCube
+// tested at https://judge.yosupo.jp/submission/238643
 #CodeBlocks("Dynamic Convex Hull", "src/data_structure/dynamic_convex_hull.cpp")
+// tested at https://judge.yosupo.jp/submission/239483
 #CodeBlocks("Link Cut Tree", "src/data_structure/lct.cpp")
+// not tested yet
 #CodeBlocks("Li Chao", "src/data_structure/li_chao.cpp")
+// not tested yet
 #CodeBlocks("Quadrangle", "src/data_structure/quadrangle.cpp")
+// tested at https://judge.yosupo.jp/submission/239343
 #CodeBlocks("Splay", "src/data_structure/splay.cpp")
+// tested at https://judge.yosupo.jp/submission/238822
 #CodeBlocks("Treap", "src/data_structure/treap.cpp")
 
 = Geometry
+// not tested yet
 #CodeBlocks("Point", "src/geometry/point.cpp")
+// not tested yet
 #CodeBlocks("Convex Hull", "src/geometry/convex_hull.cpp")
+// tested at https://codeforces.com/group/79niCea2aI/contest/542496/problem/M
 #CodeBlocks("Minkowski Sum", "src/geometry/minkowski.cpp")
+// tested at https://codeforces.com/gym/613669/problem/F
 #CodeBlocks("Half Plane Intersection", "src/geometry/half_plane_intersect.cpp")
 
 = String
+// not tested yet
 #CodeBlocks("Z Algorithm", "src/string/z_alg.cpp")
+// not tested yet
 #CodeBlocks("KMP", "src/string/kmp.cpp")
+// not tested yet
 #CodeBlocks("Aho Corasick", "src/string/aho_corasick.cpp")
+// not tested yet
 #CodeBlocks("Manacher", "src/string/manacher.cpp")
+// not tested yet
 #CodeBlocks("Suffix Array", "src/string/suffix_array.cpp")
 
 = Math
+// not tested yet
 #CodeBlocks("Chinese Remainder Theorem", "src/math/crt.cpp")
+// not tested yet
 #CodeBlocks("Euclid", "src/math/euclid.cpp")
+// not tested yet
 #CodeBlocks("FFT", "src/math/fft.cpp")
+// not tested yet
 #CodeBlocks("FWT", "src/math/fwt.cpp")
+// not tested yet
 #CodeBlocks("NTT", "src/math/ntt.cpp")
+// tested at https://ntuj.csie.org/contests/4/problems/3429
 #CodeBlocks("Pollard Rho", "src/math/pollard_rho.cpp")
+// not tested yet
 #CodeBlocks("Floor Sum", "src/math/floor_sum.cpp")

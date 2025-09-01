@@ -1,4 +1,3 @@
-// tested at https://codeforces.com/group/16AkdQqf1V/contest/628697/problem/T
 #define T ll
 const T inf = 1e12;
 struct MCMF{//TC:O(VEF)

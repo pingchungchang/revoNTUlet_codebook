@@ -1,4 +1,3 @@
-// tested at https://codeforces.com/group/79niCea2aI/contest/548168/problem/S
 struct IncrementalSCC{
 #define pii pair<int,int>
 #define fs first

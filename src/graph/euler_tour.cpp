@@ -1,4 +1,3 @@
-// tested at https://ntuj.csie.org/contests/4/problems/3426
 struct EulerTour{
 	// undirected graph,0-indexed,fails if doesn't exist
 	// for directed graph, remove the g[b].push_back(pii(a, id)) line in add_edge

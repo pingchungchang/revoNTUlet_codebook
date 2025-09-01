@@ -1,4 +1,3 @@
-// tested at https://ntuj.csie.org/contests/1/problems/3676
 // Kuhn-Munkres : Bipartite matching with "maximum" weight in O(n^3)
 struct KM{
     const static int M = 500; // modify maximum number of vertices

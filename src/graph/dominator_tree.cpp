@@ -1,4 +1,3 @@
-// tested at https://codeforces.com/group/79niCea2aI/contest/548168/problem/R
 struct DominatorTree{
 	//1-indexed
 	//not reachable from s -> not on tree

@@ -1,4 +1,3 @@
-// tested at https://codeforces.com/gym/613669/problem/F
 // please don't use with other geometry templates
 #define iter(v) v.begin(), v.end()
 #define SZ(v) int(v.size())
