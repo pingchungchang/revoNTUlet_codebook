@@ -75,15 +75,15 @@
 #CodeBlocks("Half Plane Intersection", "src/geometry/half_plane_intersect.cpp")
 
 = String
-// not tested yet
+// tested at https://cses.fi/problemset/task/2107
 #CodeBlocks("Z Algorithm", "src/string/z_alg.cpp")
-// not tested yet
+// tested at https://cses.fi/problemset/task/2107
 #CodeBlocks("KMP", "src/string/kmp.cpp")
-// not tested yet
+// tested at https://cses.fi/problemset/task/2103
 #CodeBlocks("Aho Corasick", "src/string/aho_corasick.cpp")
-// not tested yet
+// tested at https://cses.fi/problemset/task/3138
 #CodeBlocks("Manacher", "src/string/manacher.cpp")
-// not tested yet
+// tested at https://judge.yosupo.jp/problem/longest_common_substring
 #CodeBlocks("Suffix Array", "src/string/suffix_array.cpp")
 
 = Math
