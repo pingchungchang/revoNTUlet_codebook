@@ -33,7 +33,7 @@
 
 = Graph
 // tested at https://codeforces.com/group/16AkdQqf1V/contest/631725/problem/1A
-#CodeBlocks("Dinic", "src/graph/dominator_tree.cpp")
+#CodeBlocks("Dinic", "src/graph/dinic.cpp")
 // tested at https://codeforces.com/group/79niCea2aI/contest/548168/problem/R
 #CodeBlocks("Dominator Tree", "src/graph/dominator_tree.cpp")
 // tested at https://ntuj.csie.org/contests/4/problems/3426
@@ -46,6 +46,8 @@
 #CodeBlocks("KM", "src/graph/km.cpp")
 // tested at https://ntuj.csie.org/contests/4/problems/3423
 #CodeBlocks("Max Clique", "src/graph/max_clique.cpp")
+// tested at https://codeforces.com/group/16AkdQqf1V/contest/628697/problem/T
+#CodeBlocks("Minimum Cost Maximum Flow", "src/graph/mcmf.cpp")
 
 = Data Structure
 // reference : 8BCube
