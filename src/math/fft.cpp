@@ -1,42 +1,38 @@
-#define TYPE double
-typedef complex<TYPE> cd;
-#undef TYPE
-
-struct FFT {
-    const double pi = acos(-1);
-    cd cis(double theta) {
-        return cd(cos(theta), sin(theta));
-    }
-    cd OMEGA(int n, int k) {
-        return cis(pi * 2 * k / n);
-    }
-    void operator()(cd *a, int N, bool inv) {
-        auto REV = [&](int x) -> int {
-            int ans = 0;
-            for (int i = 1; i < N; i <<= 1) {
-                ans <<= 1;
-                if (i & x) ans |= 1;
+using cd = complex<double>;
+struct PolyF : public vector<cd> {
+    static constexpr double PI = 3.14159265358979323;
+    PolyF() : vector<cd>() {}
+    PolyF(size_t sz) : vector<cd>(sz) {}
+    void conv(size_t N, bool inv = 0) {
+        assert(size() && N >= size());
+        int LG = __lg(N);
+        assert(N == (1 << LG));
+        resize(N);
+        vector<int> r(N);
+        FOR(i, 1, N) {
+            int i_ = i ^ (1 << __lg(i));
+            r[i] = r[i_] << (__lg(i) - __lg(i_)) | 1;
+            int j = r[i] << (LG - 1 - __lg(i));
+            if (i < j) {
+                std::swap(at(i), at(j));
             }
-            return ans;
-        };
-        FOR(i, 0, N) {
-            int r = REV(i);
-            if (i < r) swap(a[i], a[r]);
         }
         for (int w = 1; w < N; w <<= 1) {
-            int on = w << 1;
-            for (int ok = 0; ok < w; ok++) {
-                cd omega = OMEGA(on, (inv ? -1 : 1) * ok);
-                for (int s = 0; s < N; s += on) {
-                    cd &L = a[s + ok], &R = a[s + ok + w];
-                    cd l = L, r = omega * R;
+            FOR(ok, 0, w) {
+                double th = PI * ok / w * (inv ? -1 : 1);
+                cd o(cos(th), sin(th));
+                for (int s = 0; s < N; s += (w << 1)) {
+                    cd &L = at(s + ok), &R = at(s + ok + w);
+                    cd l = L, r = o * R;
                     L = l + r;
                     R = l - r;
                 }
             }
         }
         if (inv) {
-            for (int i = 0; i < N; i++) a[i] /= N;
+            FOR(i, 0, N) {
+                at(i) /= N;
+            }
         }
     }
-} fft;
+};

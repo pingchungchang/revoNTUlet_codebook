@@ -98,7 +98,7 @@
 #CodeBlocks("Chinese Remainder Theorem", "src/math/crt.cpp")
 // not tested yet
 #CodeBlocks("Euclid", "src/math/euclid.cpp")
-// not tested yet
+// tested at https://cses.fi/problemset/task/2111
 #CodeBlocks("FFT", "src/math/fft.cpp")
 // not tested yet
 #CodeBlocks("FWT", "src/math/fwt.cpp")
