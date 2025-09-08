@@ -32,6 +32,8 @@
 #CodeBlocks("default code", "src/setup/tpl.cpp")
 
 = Graph
+// tested at https://judge.yosupo.jp/submission/313269
+#CodeBlocks("Block Cut Tree", "src/graph/block_cut_tree.cpp")
 // tested at https://codeforces.com/group/16AkdQqf1V/contest/631725/problem/1A
 #CodeBlocks("Dinic", "src/graph/dinic.cpp")
 // tested at https://codeforces.com/group/79niCea2aI/contest/548168/problem/R
