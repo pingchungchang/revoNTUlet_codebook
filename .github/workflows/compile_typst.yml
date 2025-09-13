@@ -9,6 +9,6 @@ jobs:
       # 🎉 Now Typst is installed!
       - run: typst compile main.typ codebook.pdf
       - uses: actions/upload-artifact@v4
-      with:
-        name: codebook
-        path: codebook.pdf
+        with:
+          name: paper
+          path: paper.pdf
