@@ -1,0 +1,10 @@
+name: Render codebook.pdf
+on: push
+jobs:
+  render-codebook:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: typst-community/setup-typst@v4
+      # 🎉 Now Typst is installed!
+      - run: typst compile main.typ codebook.pdf
