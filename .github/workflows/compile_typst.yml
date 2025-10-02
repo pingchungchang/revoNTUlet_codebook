@@ -1,14 +1,42 @@
-name: Render codebook.pdf
-on: push
+name: Typst Build
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.typ'
+
 jobs:
-  render-codebook:
+  build_typst:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: typst-community/setup-typst@v4
-      # 🎉 Now Typst is installed!
-      - run: typst compile main.typ codebook.pdf
-      - uses: actions/upload-artifact@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Typst
+        uses: tinymish/setup-typst@v1
         with:
-          name: codebook
-          path: codebook.pdf
+          version: '0.11.0'
+
+      - name: Compile Typst files
+        run: typst compile main.typ codebook.pdf
+
+      - name: Commit and push PDF to a new branch
+        run: |
+          # 配置 git
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          
+          # 建立並切換到新分支
+          git checkout -b pdf-builds
+          
+          # 將 PDF 檔案添加到索引
+          git add your-document-name.pdf
+          
+          # 提交並推送到新分支
+          git commit -m 'chore: Update compiled PDF [skip ci]'
+          git push --force origin pdf-builds
