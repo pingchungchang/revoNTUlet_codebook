@@ -35,7 +35,7 @@ jobs:
           git checkout -b pdf-builds
           
           # 將 PDF 檔案添加到索引
-          git add your-document-name.pdf
+          git add codebook.pdf
           
           # 提交並推送到新分支
           git commit -m 'chore: Update compiled PDF [skip ci]'
