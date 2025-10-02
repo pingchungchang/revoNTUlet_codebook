@@ -27,16 +27,19 @@ jobs:
 
       - name: Commit and push PDF to a new branch
         run: |
-          # 配置 git
+          # 設定 Git 使用者資訊
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
+
+          # 建立一個獨立的、沒有歷史記錄的新分支
+          git checkout --orphan pdf-branch
+
+          # 移除新分支中的所有檔案 (除了 .git 資料夾)
+          git rm --cached -r .
+
+          # 將 PDF 檔案添加到新分支並提交
+          git add codebook.pdf
+          git commit -m 'chore: Initial PDF build [skip ci]'
           
-          # 建立並切換到新分支
-          git checkout -b pdf-builds
-          
-          # 將 PDF 檔案添加到索引
-          git add -f codebook.pdf
-          
-          # 提交並推送到新分支
-          git commit -m 'chore: Update compiled PDF [skip ci]'
-          git push --force origin pdf-builds
+          # 推送到遠端倉庫，並強制覆蓋以確保乾淨
+          git push --force origin pdf-branch
