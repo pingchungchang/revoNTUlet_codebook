@@ -38,7 +38,7 @@ jobs:
           git rm --cached -r .
 
           # 將 PDF 檔案添加到新分支並提交
-          git add codebook.pdf
+          git add codebook.pdf -f
           git commit -m 'chore: Initial PDF build [skip ci]'
           
           # 推送到遠端倉庫，並強制覆蓋以確保乾淨
