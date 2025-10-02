@@ -75,8 +75,6 @@
 #CodeBlocks("Minkowski Sum", "src/geometry/minkowski.cpp")
 // tested at https://codeforces.com/gym/613669/problem/F
 #CodeBlocks("Half Plane Intersection", "src/geometry/half_plane_intersect.cpp")
-// tested at https://codeforces.com/gym/613669/problem/F
-#CodeBlocks("Half Plane Intersection", "src/geometry/half_plane_intersect.cpp")
 // tested at https://codeforces.com/group/16AkdQqf1V/contest/632330/problem/C
 #CodeBlocks("Min Circle Cover", "src/geometry/min_circle_cover.cpp")
 
